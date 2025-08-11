@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name=" viewport" content="width-device-width,initial-scale=1.0"/>
+        <title>Interactive To Do List</title>
+        <style>
+            l1{
+                color: purple;
+                list-style: none
+                position: relative;
+                padding-right; 30px
+                cursor: pointer;
+            }
+
+            .check-icon {
+                display: none; /* Hidden by default */
+                position: absolute;
+                right: 0;
+                color: green;
+            }
+
+            .completed {
+                color: green; /* change text colour when completed */
+            }
+
+            .completed .check-icon {
+                display: inline; /* show icon when completed */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Interactive To Do List</h1>
+        
+        <u1 id="todo-list">
+            <l1>Morning devotion <span class= "check-icon">✔</span></l1>
+            <l1>House chores <span class= "check-icon">✔</span></l1>
+            <l1>Project completion <span class= "check-icon">✔</span></l1>
+            <l1>Book reading <span class= "check-icon">✔</span></l1>
+            <l1>eHAcademy <span class= "check-icon">✔</span></l1>
+        </u1>
+
+        <script>
+            // Add click behaviour to each list item
+            const items = document.querySelectorAll("#todo-list l1");
+
+            items.forEach(item => {
+                item.addEventListener("click", function() {
+                    item.classList.toggle("completed");
+                });
+                {);
+            </script>
+         
+ </body>           
+</html>
